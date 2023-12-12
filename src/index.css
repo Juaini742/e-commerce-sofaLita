@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  @apply w-[90%] mx-auto;
+}
+
+.btn-primary {
+  @apply bg-primary shadow-lg rounded-full text-white hover:bg-secondary hover:transition ease-in-out duration-300;
+}
+.btn-primary-search {
+  @apply bg-primary shadow-lg text-white hover:bg-secondary hover:transition ease-in-out duration-300;
+}
+.btn-secondary {
+  @apply bg-white shadow-sm rounded-full text-primary hover:bg-primary hover:text-white hover:transition ease-in-out duration-300;
+}
