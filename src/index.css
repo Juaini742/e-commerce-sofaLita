@@ -17,5 +17,9 @@ body {
   @apply bg-primary shadow-lg text-white hover:bg-secondary hover:transition ease-in-out duration-300;
 }
 .btn-secondary {
-  @apply bg-white shadow-sm rounded-full text-primary hover:bg-primary hover:text-white hover:transition ease-in-out duration-300;
+  @apply bg-white shadow-md rounded-full text-primary hover:bg-primary hover:text-white hover:transition ease-in-out duration-300;
+}
+
+.trans-300 {
+  @apply hover:transition ease-in-out duration-300;
 }

@@ -1,5 +1,9 @@
+import FooterSection from "../Molecules/Footer";
 import HeroSection from "../Molecules/Hero";
 import Navbar from "../Molecules/Navbar";
+import OfferSection from "../Molecules/Offer";
+import ProductSection from "../Molecules/Products/inde";
+import SampleSection from "../Molecules/Sample";
 import SearchSection from "../Molecules/Search";
 import ServiceSection from "../Molecules/Service";
 
@@ -10,7 +14,10 @@ function Home() {
       <HeroSection />
       <ServiceSection />
       <SearchSection />
-      <div className="my-56"></div>
+      <ProductSection />
+      <SampleSection />
+      <OfferSection />
+      <FooterSection />
     </>
   );
 }

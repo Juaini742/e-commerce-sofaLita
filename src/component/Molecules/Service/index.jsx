@@ -11,10 +11,10 @@ function ServiceSection() {
         {service.map((item) => (
           <div
             key={item.id}
-            className="flex justify-center items-center h-[700px]"
+            className="flex justify-center items-center h-[700px] bg-cover bg-no-repeat"
             style={{backgroundImage: `url(${item.img})`}}
           >
-            <div className="bg-warning/50 p-5 backdrop-blur-sm text-center flex flex-col justify-center items-center">
+            <div className="bg-warning/50 p-5 backdrop-blur-sm text-center w-full">
               <h5 className="font-bold">{item.name}</h5>
               <p className="text-white">{item.desc}</p>
             </div>
