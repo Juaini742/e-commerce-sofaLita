@@ -6,6 +6,10 @@ function Button(props) {
     case "primary":
       buttonStyle += "btn-primary";
       break;
+    case "primary-outline":
+      buttonStyle +=
+        "border border-black hover:bg-white hover:text-black trans-300";
+      break;
     case "secondary":
       buttonStyle += "btn-secondary";
       break;

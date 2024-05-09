@@ -1,6 +1,6 @@
-import {Button, Container, Paragraph} from "../../Atom";
+import {Button, Container, Paragraph} from "../../../Atom";
 import {Carousel} from "antd";
-import {offers} from "../db";
+import {offers} from "../../db";
 
 function OfferSection() {
   return (

@@ -1,5 +1,5 @@
-import {Button, Container, Title} from "../../Atom";
-import {product} from "../db";
+import {Button, Container, Title} from "../../../Atom";
+import {product} from "../../db";
 
 function ProductSection() {
   return (

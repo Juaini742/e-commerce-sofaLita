@@ -7,22 +7,22 @@ export const navItem = [
   {
     id: 2,
     name: "Service",
-    path: "/",
+    path: "/#",
   },
   {
     id: 3,
     name: "Product",
-    path: "/",
+    path: "/#",
   },
   {
     id: 4,
     name: "Offer",
-    path: "/",
+    path: "/#",
   },
   {
     id: 5,
     name: "Contact",
-    path: "/",
+    path: "/#",
   },
 ];
 
@@ -72,14 +72,19 @@ export const service2 = [
 ];
 
 export const product = [
-  {id: 1, name: "Chesterfield", price: 300, img: "../img/sofa.png"},
-  {id: 2, name: "Eames Lounge", price: 250, img: "../img/sofa2.png"},
-  {id: 3, name: "Knole Sofa", price: 400, img: "../img/sofa3.png"},
-  {id: 4, name: "Lawson-style Sofa", price: 350, img: "../img/sofa4.png"},
-  {id: 5, name: "Chaise Longue", price: 320, img: "../img/sofa5.png"},
-  {id: 6, name: "Camelback Sofa", price: 280, img: "../img/sofa6.png"},
-  {id: 7, name: "Divan Sofa", price: 380, img: "../img/sofa7.png"},
-  {id: 8, name: "Mid-Century Modern Sofa", price: 300, img: "../img/sofa8.png"},
+  { id: 1, name: "Chesterfield", price: 300, img: "../img/sofa.png" },
+  { id: 2, name: "Eames Lounge", price: 250, img: "../img/sofa2.png" },
+  { id: 3, name: "Knole Sofa", price: 400, img: "../img/sofa3.png" },
+  { id: 4, name: "Lawson-style Sofa", price: 350, img: "../img/sofa4.png" },
+  { id: 5, name: "Chaise Longue", price: 320, img: "../img/sofa5.png" },
+  { id: 6, name: "Camelback Sofa", price: 280, img: "../img/sofa6.png" },
+  { id: 7, name: "Divan Sofa", price: 380, img: "../img/sofa7.png" },
+  {
+    id: 8,
+    name: "Mid-Century Modern Sofa",
+    price: 300,
+    img: "../img/sofa8.png",
+  },
 ];
 
 export const sample = [

@@ -1,7 +1,10 @@
-import {useState} from "react";
-import {navItem} from "../db";
-import {LuMenu} from "react-icons/lu";
-import {Button} from "../../Atom";
+import { useState } from "react";
+import { navItem } from "../db";
+import { LuMenu } from "react-icons/lu";
+import { Button } from "../../Atom";
+import { Link, NavLink } from "react-router-dom";
+import { FaUser, FaShoppingCart } from "react-icons/fa";
+import { GiSofa } from "react-icons/gi";
 
 function Navbar() {
   const [visible, setVisible] = useState(false);
@@ -12,7 +15,12 @@ function Navbar() {
   return (
     <nav className="w-full bg-white/50 backdrop-blur-lg fixed z-10">
       <div className="relative container h-14 flex justify-between items-center">
-        <div className="font-bold hidden md:flex">SofaKita</div>
+        <div className="font-bold hidden md:flex items-center gap-2">
+          <span className="text-xl">
+            <GiSofa />
+          </span>
+          SofaKita
+        </div>
 
         <div className="flex md:hidden">
           <div>
@@ -32,19 +40,31 @@ function Navbar() {
         >
           {navItem.map((item) => (
             <li key={item.id}>
-              <a
-                href={item.path}
+              <NavLink
+                to={item.path}
                 className="text-sm font-semibold hover:border-b-2 border-secondary"
               >
                 {item.name}
-              </a>
+              </NavLink>
             </li>
           ))}
         </ul>
-        <div className="">
-          <Button variant="primary" className="py-1 px-5">
-            Register
-          </Button>
+        <div className="flex gap-4">
+          <Link to="/profile">
+            <Button variant="primary" className="py-2 px-2">
+              <FaUser />
+            </Button>
+          </Link>
+          <Link to="/cart">
+            <Button variant="primary" className="py-2 px-2">
+              <FaShoppingCart />
+            </Button>
+          </Link>
+          {/* <Link to="/register">
+            <Button variant="primary" className="py-1 px-5">
+              Register
+            </Button>
+          </Link> */}
         </div>
       </div>
     </nav>

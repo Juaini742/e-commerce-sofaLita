@@ -1,4 +1,4 @@
-import {Button, Paragraph, Title} from "../../Atom";
+import {Button, Paragraph, Title} from "../../../Atom";
 import {LuSearchCheck} from "react-icons/lu";
 
 function SearchSection() {

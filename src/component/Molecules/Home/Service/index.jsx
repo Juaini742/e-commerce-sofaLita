@@ -1,5 +1,5 @@
-import {Container, Paragraph, Title} from "../../Atom";
-import {service, service2} from "../db";
+import {Container, Paragraph, Title} from "../../../Atom";
+import {service, service2} from "../../db";
 
 function ServiceSection() {
   return (

@@ -1,8 +1,8 @@
-import {Button, Title} from "../../Atom";
+import {Button, Title} from "../../../Atom";
 
 function HeroSection() {
   return (
-    <div className="bg-[url('../img/hero.jpg')] h-[700px] bg-cover ">
+    <div className="bg-[url('../img/hero.jpg')] h-[700px] md:h-[900px] bg-cover bg-no-repeat">
       <div className="bg-black/25 w-full h-full flex items-center">
         <div className="container text-center md:text-left">
           <Title className=" text-4xl text-warning font-bold">

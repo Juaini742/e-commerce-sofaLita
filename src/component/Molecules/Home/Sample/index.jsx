@@ -1,6 +1,6 @@
-import {Button, Container, Paragraph, Title} from "../../Atom";
-import {sample} from "../db";
-import {SlBasket} from "react-icons/sl";
+import { Button, Container, Paragraph, Title } from "../../../Atom";
+import { sample } from "../../db";
+import { SlBasket } from "react-icons/sl";
 
 function SampleSection() {
   return (
@@ -13,9 +13,9 @@ function SampleSection() {
           <div
             key={item.id}
             className="w-full h-[700px] bg-cover flex items-end hover:shadow-xl trans-300 "
-            style={{backgroundImage: `url(${item.img})`}}
+            style={{ backgroundImage: `url(${item.img})` }}
           >
-            <div className="bg-black/40 p-5 text-white">
+            <div className="bg-black/40 backdrop-blur-sm p-5 text-white">
               <Title className="font-bold">{item.name}</Title>
               <Paragraph>{item.description}</Paragraph>
               <div className="flex gap-2">
